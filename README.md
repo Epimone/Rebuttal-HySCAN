@@ -22,3 +22,12 @@
 | HySCAN | 0.50 | 80.3 | 66.4 | 56.1 | 45.8 | 38.3 | 31.7 | 25.1 | 13.9 |
 | HySCAN | 1.00 | 64.9 | 61.2 | 55.2 | 46.4 | 39.7 | 34.8 | 29.3 | 25.1 |
 | HySCAN | 1.50 | 48.3 | 45.5 | 39.4 | 36.7 | 33.4 | 30.1 | 28.3 | 25.7 |
+
+Table 3: Empirical robustness (%) of HyCAS, DCS, RPF, CTRW, & HySCAN under EOT-PGD & adaptive attacks (BPDA and BPDA+EOT) on NIH-CXR and CIFAR-10.
+| Pipeline | NIH-CXR@EOT-PGD | NIH-CXR@BPDA | NIH-CXR@ BPDA+EOT | CIFAR-10@ EOT-PGD |CIFAR-10@ BPDA | CIFAR-10@ BPDA+EOT |
+| - | -: | -: | -: | -: | -: | -: |
+| HyCAS | 83.59 | 82.24 | 78.31 | 68.38 | 68.12 | 66.50 |
+| DCS | 81.14 | 76.72 | 74.93 | 69.81 | 69.30 | 67.56 |
+| RPF | 82.22 | 77.34 | 75.28 | 66.12 | 67.94 | 65.41 |
+| CTRW | 81.14 | 76.72 | 74.93 | 68.75 | 69.42 | 67.37 |
+| HySCAN | 88.30 | 85.26 | 84.45 | 73.24 | 73.70 | 72.85 |
