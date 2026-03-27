@@ -32,7 +32,7 @@ Table 3: Empirical robustness (%) of HyCAS, DCS, RPF, CTRW, & HySCAN under EOT-P
 | CTRW | 81.14 | 76.72 | 74.93 | 68.75 | 69.42 | 67.37 |
 | HySCAN | 88.30 | 85.26 | 84.45 | 73.24 | 73.70 | 72.85 |
 
-Table 4: base model vs base model comparison under same fraemworks ( Note : IN = ImageNet, C10= CIFAR-10)
+Table 4: base model vs base model comparison under same fraemworks ( Note: IN = ImageNet, C10= CIFAR-10)
 | Pipeline  | (\sigma=.25) C10@.50 | C10@.75 | IN@.50 | IN@.75 | (\sigma=.50) C10@.50 | C10@.75 | IN@.50 | IN@.75 |
 | - | -: | -: | -: | -: | -: | -: | -: | -: |
 | Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
