@@ -121,17 +121,14 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 
 
 
-
-
-<!-- Empirical robustness (APGD-20 & AA-20, ε = 8/255, 16/255) -->
+<!-- Empirical robustness: EyePACS & HAM10000 (ℓ∞, APGD-20 & AA-20) -->
 <table>
   <caption>
-    <strong>Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> adversarial attacks</strong>
-    (APGD-20 and AA-20) on <code>EyePACS</code> (left) and <code>HAM10000</code> (right).<br>
-    Values in parentheses are standard deviations.
+    <strong>Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> attacks</strong>
+    (APGD-20 and AA-20) on <code>EyePACS</code> (left) and <code>HAM10000</code> (right)
+    at ε ∈ {8/255, 16/255}. Values in parentheses are standard deviations.
   </caption>
 
-  <!-- column headers -->
   <thead>
     <tr>
       <th rowspan="3">Method</th>
@@ -204,10 +201,9 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 
     <!-- HySCAN -->
     <tr style="background:#f7f7f7;font-weight:bold">
-      <td>HySCAN&nbsp;(Ours)</td>
+      <td>HySCAN (Ours)</td>
       <td>78.3 (1.92)</td><td>73.9 (1.57)</td><td>62.2 (2.91)</td><td>73.1 (2.25)</td><td>60.5 (2.88)</td>
       <td>75.1 (1.84)</td><td>68.3 (2.75)</td><td>57.2 (2.86)</td><td>66.9 (3.17)</td><td>55.2 (2.62)</td>
     </tr>
   </tbody>
 </table>
-
