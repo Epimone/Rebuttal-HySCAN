@@ -121,9 +121,10 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 
 
 
-<!--  ────────────────────────────────────────────────────────────────
-     Empirical robustness table – EyePACS & HAM10000
-     (GitHub-friendly HTML; no external CSS required)
+
+<!-- ────────────────────────────────────────────────────────────────
+     Empirical robustness (EyePACS & HAM10000)
+     GitHub-friendly HTML table (no external CSS required)
      ──────────────────────────────────────────────────────────────── -->
 
 <table>
@@ -134,25 +135,26 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
   </caption>
 
   <thead>
-    <!-- Top header row: dataset blocks -->
+    <!-- 1️⃣  dataset blocks -->
     <tr>
       <th rowspan="3">Method</th>
       <th colspan="5">EyePACS</th>
       <th colspan="5">HAM10000</th>
     </tr>
 
-    <!-- Second header row: attack types -->
+    <!-- 2️⃣  attack types -->
     <tr>
+      <!-- EyePACS -->
       <th rowspan="2">Clean</th>
       <th colspan="2">APGD-20</th>
       <th colspan="2">AA-20</th>
-
+      <!-- HAM10000 -->
       <th rowspan="2">Clean</th>
       <th colspan="2">APGD-20</th>
       <th colspan="2">AA-20</th>
     </tr>
 
-    <!-- Third header row: ε values -->
+    <!-- 3️⃣  ε values -->
     <tr>
       <th>8/255</th><th>16/255</th><th>8/255</th><th>16/255</th>
       <th>8/255</th><th>16/255</th><th>8/255</th><th>16/255</th>
@@ -160,7 +162,7 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
   </thead>
 
   <tbody>
-    <!-- Helper class for zebra-striping (optional) -->
+    <!-- Stripe every other row for readability -->
     <tr style="background:#f6f8fa;">
       <td>DRS</td>
       <td>71.9 (3.86)</td><td>58.3 (2.61)</td><td>47.4 (3.71)</td><td>56.5 (2.92)</td><td>45.7 (3.94)</td>
@@ -204,7 +206,7 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
     </tr>
 
     <tr>
-      <td><strong>HySCAN (Ours)</strong></td>
+      <td><strong>HySCAN&nbsp;(Ours)</strong></td>
       <td><strong>78.3 (1.92)</strong></td><td><strong>73.9 (1.57)</strong></td><td><strong>62.2 (2.91)</strong></td>
       <td><strong>73.1 (2.25)</strong></td><td><strong>60.5 (2.88)</strong></td>
       <td><strong>75.1 (1.84)</strong></td><td><strong>68.3 (2.75)</strong></td><td><strong>57.2 (2.86)</strong></td>
