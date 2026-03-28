@@ -44,5 +44,96 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 | CTRW+ARS | 54.5 | 42.0 | 54.5 | 44.5 | 53.9 | 44.7 | 52.1 | 42.6 |
 | HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
 
+<!-- Empirical robustness table: NCT-CRC-HE-100K (left) and NIH-CXR (right) -->
+<table>
+  <caption>
+    <strong>Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> attacks (APGD-20 and AA-20)</strong><br>
+    Datasets: <code>NCT-CRC-HE-100K</code> and <code>NIH-CXR</code>; perturbation strengths ε ∈ {8/255, 16/255}.<br>
+    Values in parentheses are standard deviations.
+  </caption>
 
+  <!-- Header rows -->
+  <thead>
+    <tr>
+      <th rowspan="3">Method</th>
+      <th colspan="5">NCT-CRC-HE-100K</th>
+      <th colspan="5">NIH-CXR</th>
+    </tr>
+    <tr>
+      <th rowspan="2">Clean</th>
+      <th colspan="2">APGD-20</th>
+      <th colspan="2">AA-20</th>
+      <th rowspan="2">Clean</th>
+      <th colspan="2">APGD-20</th>
+      <th colspan="2">AA-20</th>
+    </tr>
+    <tr>
+      <th>8/255</th><th>16/255</th>
+      <th>8/255</th><th>16/255</th>
+      <th>8/255</th><th>16/255</th>
+      <th>8/255</th><th>16/255</th>
+    </tr>
+  </thead>
+
+  <!-- Body rows -->
+  <tbody>
+    <!-- DRS -->
+    <tr>
+      <td><em>DRS</em><sup>[1]</sup></td>
+      <td>85.9 (2.25)</td><td>75.1 (2.61)</td><td>65.2 (3.82)</td><td>73.5 (3.21)</td><td>63.7 (3.94)</td>
+      <td>83.9 (2.33)</td><td>73.1 (2.41)</td><td>62.9 (3.23)</td><td>71.6 (3.12)</td><td>61.9 (3.81)</td>
+    </tr>
+    <!-- ARS -->
+    <tr>
+      <td><em>ARS</em><sup>[2]</sup></td>
+      <td>86.8 (2.14)</td><td>75.9 (2.71)</td><td>66.1 (3.52)</td><td>74.6 (3.11)</td><td>64.5 (3.73)</td>
+      <td>84.8 (2.22)</td><td>75.1 (3.01)</td><td>64.7 (3.28)</td><td>72.8 (3.11)</td><td>62.8 (3.72)</td>
+    </tr>
+    <!-- AT -->
+    <tr>
+      <td><em>AT</em><sup>[3]</sup></td>
+      <td>92.2 (1.82)</td><td>77.8 (2.51)</td><td>68.7 (3.12)</td><td>76.3 (2.83)</td><td>66.2 (3.61)</td>
+      <td>89.1 (1.91)</td><td>74.7 (2.52)</td><td>66.9 (3.41)</td><td>74.2 (2.93)</td><td>64.1 (3.70)</td>
+    </tr>
+    <!-- DCS -->
+    <tr>
+      <td><em>DCS</em><sup>[4]</sup></td>
+      <td>90.3 (1.93)</td><td>84.5 (2.72)</td><td>73.0 (3.25)</td><td>83.3 (2.74)</td><td>71.6 (3.46)</td>
+      <td>87.2 (2.05)</td><td>82.4 (2.41)</td><td>71.7 (3.21)</td><td>81.7 (2.72)</td><td>69.6 (3.45)</td>
+    </tr>
+    <!-- CTRW -->
+    <tr>
+      <td><em>CTRW</em><sup>[5]</sup></td>
+      <td>90.4 (1.62)</td><td>87.6 (2.29)</td><td>76.7 (3.12)</td><td>86.7 (2.44)</td><td>75.2 (3.22)</td>
+      <td>88.4 (1.73)</td><td>85.1 (2.23)</td><td>73.1 (3.22)</td><td>84.5 (2.48)</td><td>72.6 (3.41)</td>
+    </tr>
+    <!-- RPF -->
+    <tr>
+      <td><em>RPF</em><sup>[6]</sup></td>
+      <td>91.1 (1.71)</td><td>86.1 (2.33)</td><td>73.9 (3.33)</td><td>84.2 (2.62)</td><td>72.4 (3.41)</td>
+      <td>88.4 (1.82)</td><td>83.7 (2.49)</td><td>71.9 (3.29)</td><td>82.5 (2.71)</td><td>70.8 (3.52)</td>
+    </tr>
+    <!-- HyCAS -->
+    <tr>
+      <td><em>HyCAS</em><sup>[6]</sup></td>
+      <td>91.3 (2.63)</td><td>90.4 (2.82)</td><td>79.3 (3.52)</td><td>88.2 (2.63)</td><td>76.7 (3.34)</td>
+      <td>89.5 (1.64)</td><td>88.6 (2.33)</td><td>77.3 (3.14)</td><td>86.9 (2.42)</td><td>74.4 (3.33)</td>
+    </tr>
+    <!-- HySCAN -->
+    <tr>
+      <td><strong>HySCAN&nbsp;(Ours)</strong></td>
+      <td><strong>91.5 (2.25)</strong></td><td><strong>90.7 (1.69)</strong></td><td><strong>80.2 (2.61)</strong></td><td><strong>89.5 (1.24)</strong></td><td><strong>77.3 (2.98)</strong></td>
+      <td><strong>90.1 (0.87)</strong></td><td><strong>88.9 (1.75)</strong></td><td><strong>78.1 (2.82)</strong></td><td><strong>87.3 (1.98)</strong></td><td><strong>75.1 (2.59)</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<sub>
+[1] Xia et al., 2024 · DRS   
+[2] Lyu et al., 2024 · ARS   
+[3] Madry et al., 2018 · AT   
+[4] Ma et al., 2023 · DCS   
+[5] Ma et al., 2023 · CTRW   
+[6] Dong et al., 2023 · RPF / HyCAS
+</sub>
 
