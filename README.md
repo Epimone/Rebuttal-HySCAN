@@ -210,5 +210,4 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
     </tr>
   </tbody>
 </table>
-</sub>
 
