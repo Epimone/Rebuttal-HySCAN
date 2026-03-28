@@ -121,28 +121,25 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 
 
 
-<!-- Empirical robustness: EyePACS & HAM10000 (ℓ∞, APGD-20 & AA-20) -->
+<!-- Empirical robustness table (ℓ∞, APGD-20 & AA-20) -->
 <table>
   <caption>
-    <strong>Empirical robustness&nbsp;(accuracy&nbsp;%) against
-      &ell;<sub>&infin;</sub> attacks</strong>
-    (APGD-20 and AA-20) on <code>EyePACS</code> (left) and
-    <code>HAM10000</code> (right) at &epsilon;&nbsp;∈&nbsp;{8/255,&nbsp;16/255}.  
-    Values in parentheses are standard deviations.
+    <strong>Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> adversarial attacks</strong>
+    &nbsp;(APGD-20 and AA-20) on <code>NCT-CRC-HE-100K</code> (left) and <code>NIH-CXR</code> (right) at
+    ε ∈ {8/255, 16/255}. Values in parentheses are standard deviations.
   </caption>
 
-  <!-- ────────── TABLE HEADERS ────────── -->
+  <!-- Header rows -->
   <thead>
     <tr>
       <th rowspan="3">Method</th>
-      <th colspan="5">EyePACS</th>
-      <th colspan="5">HAM10000</th>
+      <th colspan="5">NCT-CRC-HE-100K</th>
+      <th colspan="5">NIH-CXR</th>
     </tr>
     <tr>
       <th rowspan="2">Clean</th>
       <th colspan="2">APGD-20</th>
       <th colspan="2">AA-20</th>
-
       <th rowspan="2">Clean</th>
       <th colspan="2">APGD-20</th>
       <th colspan="2">AA-20</th>
@@ -153,54 +150,47 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
     </tr>
   </thead>
 
-  <!-- ────────── TABLE BODY ────────── -->
+  <!-- Body -->
   <tbody>
     <tr style="background:#f7f7f7">
       <td><em>DRS</em></td>
-      <td>71.9 (3.86)</td><td>58.3 (2.61)</td><td>47.4 (3.71)</td><td>56.5 (2.92)</td><td>45.7 (3.94)</td>
-      <td>68.9 (3.28)</td><td>53.4 (3.84)</td><td>43.2 (3.43)</td><td>51.6 (4.12)</td><td>41.8 (3.81)</td>
+      <td>85.9 (2.25)</td><td>75.1 (2.61)</td><td>65.2 (3.82)</td><td>73.5 (3.21)</td><td>63.7 (3.94)</td>
+      <td>83.9 (2.33)</td><td>73.1 (2.41)</td><td>62.9 (3.23)</td><td>71.6 (3.12)</td><td>61.9 (3.81)</td>
     </tr>
-
     <tr>
       <td><em>ARS</em></td>
-      <td>72.9 (3.97)</td><td>59.9 (2.91)</td><td>48.8 (3.61)</td><td>57.6 (2.94)</td><td>46.5 (3.73)</td>
-      <td>69.8 (3.22)</td><td>53.9 (3.88)</td><td>44.1 (3.13)</td><td>52.7 (4.10)</td><td>42.8 (3.71)</td>
+      <td>86.8 (2.14)</td><td>75.9 (2.71)</td><td>66.1 (3.52)</td><td>74.6 (3.11)</td><td>64.5 (3.73)</td>
+      <td>84.8 (2.22)</td><td>75.1 (3.01)</td><td>64.7 (3.28)</td><td>72.8 (3.11)</td><td>62.8 (3.72)</td>
     </tr>
-
     <tr style="background:#f7f7f7">
       <td><em>AT</em></td>
-      <td>78.2 (2.91)</td><td>60.0 (2.72)</td><td>50.1 (3.52)</td><td>58.3 (2.83)</td><td>48.2 (3.61)</td>
-      <td>75.2 (2.94)</td><td>56.1 (3.94)</td><td>46.5 (3.75)</td><td>54.2 (3.93)</td><td>44.2 (3.80)</td>
+      <td>92.2 (1.82)</td><td>77.8 (2.51)</td><td>68.7 (3.12)</td><td>76.3 (2.83)</td><td>66.2 (3.61)</td>
+      <td>89.1 (1.91)</td><td>74.7 (2.52)</td><td>66.9 (3.41)</td><td>74.2 (2.93)</td><td>64.1 (3.70)</td>
     </tr>
-
     <tr>
       <td><em>DCS</em></td>
-      <td>76.4 (2.94)</td><td>66.8 (2.53)</td><td>55.2 (3.68)</td><td>65.3 (3.74)</td><td>53.6 (3.46)</td>
-      <td>73.2 (2.94)</td><td>62.9 (3.48)</td><td>51.7 (3.09)</td><td>61.4 (3.72)</td><td>49.5 (3.45)</td>
+      <td>90.3 (1.93)</td><td>84.5 (2.72)</td><td>73.0 (3.25)</td><td>83.3 (2.74)</td><td>71.6 (3.46)</td>
+      <td>87.2 (2.05)</td><td>82.4 (2.41)</td><td>71.7 (3.21)</td><td>81.7 (2.72)</td><td>69.6 (3.45)</td>
     </tr>
-
     <tr style="background:#f7f7f7">
       <td><em>CTRW</em></td>
-      <td>76.4 (2.84)</td><td>70.1 (2.53)</td><td>57.7 (3.35)</td><td>69.7 (2.64)</td><td>56.1 (3.31)</td>
-      <td>74.3 (2.75)</td><td>64.7 (3.33)</td><td>52.8 (3.32)</td><td>63.3 (3.48)</td><td>51.2 (3.52)</td>
+      <td>90.4 (1.62)</td><td>87.6 (2.29)</td><td>76.7 (3.12)</td><td>86.7 (2.44)</td><td>75.2 (3.22)</td>
+      <td>88.4 (1.73)</td><td>85.1 (2.23)</td><td>73.1 (3.22)</td><td>84.5 (2.48)</td><td>72.6 (3.41)</td>
     </tr>
-
     <tr>
       <td><em>RPF</em></td>
-      <td>77.1 (2.90)</td><td>67.8 (2.57)</td><td>56.1 (3.12)</td><td>66.4 (2.73)</td><td>54.4 (3.44)</td>
-      <td>74.3 (2.86)</td><td>64.1 (3.41)</td><td>51.9 (3.42)</td><td>62.6 (3.71)</td><td>50.4 (3.58)</td>
+      <td>91.1 (1.71)</td><td>86.1 (2.33)</td><td>73.9 (3.33)</td><td>84.2 (2.62)</td><td>72.4 (3.41)</td>
+      <td>88.4 (1.82)</td><td>83.7 (2.49)</td><td>71.9 (3.29)</td><td>82.5 (2.71)</td><td>70.8 (3.52)</td>
     </tr>
-
-    <tr style="background:#f7f7f7">
+    <tr>
       <td><em>HyCAS</em></td>
-      <td>77.6 (2.79)</td><td>72.6 (2.72)</td><td>60.5 (3.43)</td><td>71.8 (2.82)</td><td>58.3 (3.32)</td>
-      <td>74.6 (2.74)</td><td>67.8 (3.43)</td><td>55.3 (3.14)</td><td>65.8 (3.42)</td><td>53.1 (3.33)</td>
+      <td>91.3 (2.63)</td><td>90.4 (2.82)</td><td>79.3 (3.52)</td><td>88.2 (2.63)</td><td>76.7 (3.34)</td>
+      <td>89.5 (1.64)</td><td>88.6 (2.33)</td><td>77.3 (3.14)</td><td>86.9 (2.42)</td><td>74.4 (3.33)</td>
     </tr>
-
     <tr style="background:#f7f7f7;font-weight:bold">
-      <td>HySCAN&nbsp;(Ours)</td>
-      <td>78.3 (1.92)</td><td>73.9 (1.57)</td><td>62.2 (2.91)</td><td>73.1 (2.25)</td><td>60.5 (2.88)</td>
-      <td>75.1 (1.84)</td><td>68.3 (2.75)</td><td>57.2 (2.86)</td><td>66.9 (3.17)</td><td>55.2 (2.62)</td>
+      <td>HySCAN (Ours)</td>
+      <td>91.5 (2.25)</td><td>90.7 (1.69)</td><td>80.2 (2.61)</td><td>89.5 (1.24)</td><td>77.3 (2.98)</td>
+      <td>90.1 (0.87)</td><td>88.9 (1.75)</td><td>78.1 (2.82)</td><td>87.3 (1.98)</td><td>75.1 (2.59)</td>
     </tr>
   </tbody>
 </table>
