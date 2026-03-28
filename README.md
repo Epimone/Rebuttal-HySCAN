@@ -43,3 +43,51 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 | RPF+ARS | 53.0 | 40.5 | 53.5 | 43.5 | 51.7 | 42.3 | 48.5 | 39.9 |
 | CTRW+ARS | 54.5 | 42.0 | 54.5 | 44.5 | 53.9 | 44.7 | 52.1 | 42.6 |
 | HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
+
+
+<table>
+  <caption>
+    <strong>Certified accuracy (%) of <code>HySCAN</code> and state-of-the-art defenses on <code>NIH-CXR</code>, <code>HAM10000</code>, and <code>CelebA</code>.</strong>
+    All approaches are evaluated at three noise levels. Bold indicates the best results.
+  </caption>
+  <thead>
+    <tr>
+      <th rowspan="2">Approach</th>
+      <th rowspan="2">σ</th>
+      <th colspan="3">NIH-CXR (ℓ<sub>2</sub> radius r)</th>
+      <th colspan="3">HAM10000 (ℓ<sub>2</sub> radius r)</th>
+      <th colspan="3">CelebA (ℓ<sub>2</sub> radius r)</th>
+    </tr>
+    <tr>
+      <th>0.0</th><th>0.50</th><th>1.0</th>
+      <th>0.0</th><th>0.50</th><th>1.0</th>
+      <th>0.0</th><th>0.50</th><th>1.0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- RS rows -->
+    <tr><td rowspan="3">RS <sup>[1]</sup></td><td>0.25</td><td>77.4</td><td>43.5</td><td>15.7</td><td>94.6</td><td>53.2</td><td>10.5</td><td>92.8</td><td>45.7</td><td>0</td></tr>
+    <tr><td>0.50</td><td>73.3</td><td>39.9</td><td>21.8</td><td>89.3</td><td>52.1</td><td>12.2</td><td>87.7</td><td>47.8</td><td>10.5</td></tr>
+    <tr><td>1.0</td><td>66.4</td><td>42.9</td><td>22.8</td><td>84.7</td><td>54.3</td><td>21.2</td><td>81.4</td><td>51.6</td><td>18.8</td></tr>
+    <!-- ARS rows -->
+    <tr><td rowspan="3">ARS <sup>[2]</sup></td><td>0.25</td><td>79.1</td><td>58.4</td><td>32.5</td><td>96.7</td><td>57.4</td><td>31.3</td><td>95.2</td><td>53.3</td><td>27.4</td></tr>
+    <tr><td>0.50</td><td>74.9</td><td>54.7</td><td>33.3</td><td>91.9</td><td>55.1</td><td>32.8</td><td>91.3</td><td>53.9</td><td>30.4</td></tr>
+    <tr><td>1.0</td><td>69.9</td><td>52.9</td><td>34.1</td><td>86.9</td><td>57.4</td><td>34.6</td><td>85.3</td><td>59.2</td><td>31.6</td></tr>
+    <!-- HySCAN rows -->
+    <tr><td rowspan="3"><strong>HySCAN (Ours)</strong></td><td>0.25</td>
+        <td><strong>81.2</strong></td><td><strong>63.1</strong></td><td><strong>39.4</strong></td>
+        <td><strong>96.9</strong></td><td><strong>62.4</strong></td><td><strong>37.2</strong></td>
+        <td><strong>96.5</strong></td><td><strong>59.7</strong></td><td><strong>34.9</strong></td></tr>
+    <tr><td>0.50</td>
+        <td><strong>76.1</strong></td><td><strong>59.6</strong></td><td><strong>42.3</strong></td>
+        <td><strong>92.8</strong></td><td><strong>61.2</strong></td><td><strong>37.9</strong></td>
+        <td><strong>92.5</strong></td><td><strong>60.7</strong></td><td><strong>36.1</strong></td></tr>
+    <tr><td>1.0</td>
+        <td><strong>71.4</strong></td><td><strong>61.1</strong></td><td><strong>42.9</strong></td>
+        <td><strong>87.7</strong></td><td><strong>63.3</strong></td><td><strong>39.5</strong></td>
+        <td><strong>87.4</strong></td><td><strong>63.9</strong></td><td><strong>38.4</strong></td></tr>
+  </tbody>
+</table>
+
+<sub>[1] Cohen et al., 2019 – Randomized Smoothing (RS); 
+[2] Lyu et al., 2024 – Adaptive RS (ARS).</sub>
