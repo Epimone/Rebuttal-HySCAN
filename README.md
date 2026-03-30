@@ -45,7 +45,7 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 | HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
 
 
-**R3-Tab-1: base model vs base model comparison under same frameworks**
+**R3-Tab-1-1: base model vs base model comparison under same frameworks**
 | Pipeline  | (σ=.25) C10@.5 | C10@.75 | IN@.5 | IN@.75 | (σ=.5) C10@.50 | C10@.75 | IN@.5 | IN@.75 |
 | - | -: | -: | -: | -: | -: | -: | -: | -: |
 | Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
