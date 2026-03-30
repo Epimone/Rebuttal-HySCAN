@@ -23,7 +23,7 @@
 | HySCAN | 1.00 | 64.9 | 61.2 | 55.2 | 46.4 | 39.7 | 34.8 | 29.3 | 25.1 |
 | HySCAN | 1.50 | 48.3 | 45.5 | 39.4 | 36.7 | 33.4 | 30.1 | 28.3 | 25.7 |
 
-R1-Table-3: Computation-robustness trade-off analysis on ResNet110/CIFAR-10 and ResNet50/ImageNet across all datasets.
+**Table R1-Tab-3: Computation-robustness trade-off analysis on ResNet110/CIFAR-10 and ResNet50/ImageNet across all datasets.**
 | Pipeline | Certified Accuracy (Avg.) | Empirical Robustness (Avg.) | CIFAR-10@ Parameters/FLOPs | ImageNet@ Parameters/FLOPs |
 | - | -: | -: | -: | -: |
 | RS | 26.09 | - | 47.6/8.1 | 25.6/3.8 |
