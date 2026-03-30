@@ -201,8 +201,9 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 
 <!-- Grad-CAM visualization -->
 <p align="center">
-  <!-- Use the actual file extension you committed, e.g. .png or .jpg -->
-  <img src="ICML%20Gradcam.png" alt="Gradcam Image" width="600"/>
+  <!-- “raw.githubusercontent.com” serves the image directly -->
+  <img src="https://raw.githubusercontent.com/Epimone/Rebuttal-HySCAN/main/ICML%20Gradcam.jpg"
+       alt="Gradcam Image" width="600"/>
   <br/>
   <em>Gradcam Image</em>
 </p>
