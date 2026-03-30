@@ -206,20 +206,9 @@
 
 
 
-Table 4: base model vs base model comparison under same fraemworks ( Note: IN = ImageNet, C10= CIFAR-10)
-| Pipeline  | (\sigma=.25) C10@.50 | C10@.75 | IN@.50 | IN@.75 | (\sigma=.50) C10@.50 | C10@.75 | IN@.50 | IN@.75 |
-| - | -: | -: | -: | -: | -: | -: | -: | -: |
-| Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
-| RPF+RS | 51.6 | 33.9 | 38.5 | 26.7 | 50.3 | 38.8 | 47.4 | 37.5 |
-| CTRW+RS | 52.7 | 36.2 | 42.3 | 30.8 | 52.5 | 40.3 | 50.7 | 40.2 |
-| HySCAN+RS | 57.3 | 45.5 | 56.7 | 47.9 | 56.1 | 45.8 | 55.1 | 46.8 |
-| Vanilla+ARS | 51.4 | 39.1 | 52.7 | 43.1 | 50.2 | 38.9 | 50.3 | 43.4 |
-| RPF+ARS | 53.0 | 40.5 | 53.5 | 43.5 | 51.7 | 42.3 | 48.5 | 39.9 |
-| CTRW+ARS | 54.5 | 42.0 | 54.5 | 44.5 | 53.9 | 44.7 | 52.1 | 42.6 |
-| HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
 
 
-**R3-Tab-1-1: base model vs base model comparison under same frameworks**
+**R3-Tab-1-1: base model vs base model comparison under same frameworks. ( Note: IN = ImageNet, C10= CIFAR-10)**
 | Pipeline  | (σ=.25) C10@.5 | C10@.75 | IN@.5 | IN@.75 | (σ=.5) C10@.50 | C10@.75 | IN@.5 | IN@.75 |
 | - | -: | -: | -: | -: | -: | -: | -: | -: |
 | Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
