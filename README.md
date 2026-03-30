@@ -205,5 +205,5 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
   <img src="https://raw.githubusercontent.com/Epimone/Rebuttal-HySCAN/main/ICML%20Gradcam.jpg"
        alt="Gradcam Image" width="600"/>
   <br/>
-  <em>Gradcam Image</em>
+  <em>Figure R4-Fig-1. Qualitative robustness analysis on NIH-CXR dataset. For a chest X-ray originally labeled No Finding, a PGD adversarial perturbation induces a prediction of Pneumothorax, whereas HySCAN predicts No Finding. A Grad-CAM visualization is shown for qualitative interpretation.</em>
 </p>
