@@ -1,5 +1,5 @@
 # Rebuttal-HySCAN
-**Table 1: Certified accuracy (%) of HySCAN and HyCAS on ImageNet.**
+**Table R1-Tab-1: Certified accuracy (%) of HySCAN and HyCAS on ImageNet.**
 | Method | sigma | r=0.00 | r=0.25 | r=0.50 | r=0.75 | r=1.00 | r=1.25 | r=1.50 | r=2.00 |
 |:--|:--:|--:|--:|--:|--:|--:|--:|--:|--:|
 | HyCAS | 0.25 | 72.3 | 63.9 | 55.6 | 46.4 | 40.7 | 35.2 | 29.7 | 5.42 |
@@ -11,7 +11,7 @@
 | HySCAN | 1.00 | 53.5 | 50.4 | 47.9 | 40.7 | 38.1 | 34.7 | 31.5 | 28.2 |
 | HySCAN | 1.50 | 39.2 | 38.3 | 35.8 | 33.7 | 31.2 | 30.1 | 28.9 | 28.1 |
 
-**Table 2: Certified accuracy (%) of HySCAN and HyCAS on CIFAR-10.**
+**Table R1-Tab-2: Certified accuracy (%) of HySCAN and HyCAS on CIFAR-10.**
 | Method | sigma | r=0.00 | r=0.25 | r=0.50 | r=0.75 | r=1.00 | r=1.25 | r=1.50 | r=2.00 |
 |:--|:--:|--:|--:|--:|--:|--:|--:|--:|--:|
 | HyCAS | 0.25 | 85.4 | 70.1 | 56.7 | 44.3 | 36.5 | 29.6 | 22.9 | 8.52 |
@@ -22,6 +22,22 @@
 | HySCAN | 0.50 | 80.3 | 66.4 | 56.1 | 45.8 | 38.3 | 31.7 | 25.1 | 13.9 |
 | HySCAN | 1.00 | 64.9 | 61.2 | 55.2 | 46.4 | 39.7 | 34.8 | 29.3 | 25.1 |
 | HySCAN | 1.50 | 48.3 | 45.5 | 39.4 | 36.7 | 33.4 | 30.1 | 28.3 | 25.7 |
+
+R1-Table-3: Computation-robustness trade-off analysis on ResNet110/CIFAR-10 and ResNet50/ImageNet across all datasets.
+| Pipeline | Certified Accuracy (Avg.) | Empirical Robustness (Avg.) | CIFAR-10@ Parameters/FLOPs | ImageNet@ Parameters/FLOPs |
+| - | -: | -: | -: | -: |
+| RS | 26.09 | - | 47.6/8.1 | 25.6/3.8 |
+| ARS | 46.14 | 59.88 | 47.6/8.1 | 25.6/3.8 |
+| RPF w/o RS/ARS | 43.60 | 64.91 | 47.6/8.1 | 25.6/3.8 |
+| CTRW w/o RS/ARS | 45.91 | 68.45 | 47.6/8.1 | 25.6/3.8 |
+| HySCAN | 54.04 | 71.26 | 101.6/8.75 | 149.8/179.03"
+
+
+
+
+
+
+
 
 Table 3: Empirical robustness (%) of HyCAS, DCS, RPF, CTRW, & HySCAN under EOT-PGD & adaptive attacks (BPDA and BPDA+EOT) on NIH-CXR and CIFAR-10.
 | Pipeline | NIH-CXR@EOT-PGD | NIH-CXR@BPDA | NIH-CXR@ BPDA+EOT | CIFAR-10@ EOT-PGD |CIFAR-10@ BPDA | CIFAR-10@ BPDA+EOT |
