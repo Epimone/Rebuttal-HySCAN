@@ -32,55 +32,22 @@
 | CTRW w/o RS/ARS | 45.91 | 68.45 | 47.6/8.1 | 25.6/3.8 |
 | HySCAN | 54.04 | 71.26 | 101.6/8.75 | 149.8/179.03"
 
+**Table R1-Tab-4: Empirical robustness (%) under EOT-PGD (EP) & adaptive attacks (BPDA and BPDA+EOT (BE)) on NIH-CXR (NC) & CIFAR-10 (C10).**
 
-
-
-
-
-
-
-Table 3: Empirical robustness (%) of HyCAS, DCS, RPF, CTRW, & HySCAN under EOT-PGD & adaptive attacks (BPDA and BPDA+EOT) on NIH-CXR and CIFAR-10.
-| Pipeline | NIH-CXR@EOT-PGD | NIH-CXR@BPDA | NIH-CXR@ BPDA+EOT | CIFAR-10@ EOT-PGD |CIFAR-10@ BPDA | CIFAR-10@ BPDA+EOT |
+| Pipeline | NC@EP | NC@BPDA | NC@BE | C10@EP |C10@BPDA | C10@BE |
 | - | -: | -: | -: | -: | -: | -: |
-| HyCAS | 83.59 | 82.24 | 78.31 | 68.38 | 68.12 | 66.50 |
-| DCS | 81.14 | 76.72 | 74.93 | 69.81 | 69.30 | 67.56 |
-| RPF | 82.22 | 77.34 | 75.28 | 66.12 | 67.94 | 65.41 |
-| CTRW | 81.14 | 76.72 | 74.93 | 68.75 | 69.42 | 67.37 |
-| HySCAN | 88.30 | 85.26 | 84.45 | 73.24 | 73.70 | 72.85 |
-
-Table 4: base model vs base model comparison under same fraemworks ( Note: IN = ImageNet, C10= CIFAR-10)
-| Pipeline  | (\sigma=.25) C10@.50 | C10@.75 | IN@.50 | IN@.75 | (\sigma=.50) C10@.50 | C10@.75 | IN@.50 | IN@.75 |
-| - | -: | -: | -: | -: | -: | -: | -: | -: |
-| Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
-| RPF+RS | 51.6 | 33.9 | 38.5 | 26.7 | 50.3 | 38.8 | 47.4 | 37.5 |
-| CTRW+RS | 52.7 | 36.2 | 42.3 | 30.8 | 52.5 | 40.3 | 50.7 | 40.2 |
-| HySCAN+RS | 57.3 | 45.5 | 56.7 | 47.9 | 56.1 | 45.8 | 55.1 | 46.8 |
-| Vanilla+ARS | 51.4 | 39.1 | 52.7 | 43.1 | 50.2 | 38.9 | 50.3 | 43.4 |
-| RPF+ARS | 53.0 | 40.5 | 53.5 | 43.5 | 51.7 | 42.3 | 48.5 | 39.9 |
-| CTRW+ARS | 54.5 | 42.0 | 54.5 | 44.5 | 53.9 | 44.7 | 52.1 | 42.6 |
-| HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
-
-
-**R3-Tab-1-1: base model vs base model comparison under same frameworks**
-| Pipeline  | (σ=.25) C10@.5 | C10@.75 | IN@.5 | IN@.75 | (σ=.5) C10@.50 | C10@.75 | IN@.5 | IN@.75 |
-| - | -: | -: | -: | -: | -: | -: | -: | -: |
-| Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
-| RPF+RS | 51.6 | 33.9 | 38.5 | 26.7 | 50.3 | 38.8 | 47.4 | 37.5 |
-| CTRW+RS | 52.7 | 36.2 | 42.3 | 30.8 | 52.5 | 40.3 | 50.7 | 40.2 |
-| HySCAN+RS | 57.3 | 45.5 | 56.7 | 47.9 | 56.1 | 45.8 | 55.1 | 46.8 |
-| Vanilla+ARS | 51.4 | 39.1 | 52.7 | 43.1 | 50.2 | 38.9 | 50.3 | 43.4 |
-| RPF+ARS | 53.0 | 40.5 | 53.5 | 43.5 | 51.7 | 42.3 | 48.5 | 39.9 |
-| CTRW+ARS | 54.5 | 42.0 | 54.5 | 44.5 | 53.9 | 44.7 | 52.1 | 42.6 |
-| HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
-
-
+| HyCAS | 83.6 | 82.2 | 78.3 | 68.4 | 68.1 | 66.5 |
+| DCS | 81.1 | 76.7 | 74.9 | 69.8 | 69.3 | 67.6 |
+| RPF | 82.2 | 77.3 | 75.3 | 66.1 | 67.9 | 65.4 |
+| CTRW | 81.1 | 76.7 | 74.9 | 68.8 | 69.4 | 67.4 |
+| **HySCAN** | **88.3** | **85.3** | **84.4** | **73.2** | **73.7** | **72.9** |
 
 
 
 <!-- Empirical robustness table (ℓ∞, APGD-20 & AA-20) -->
 <table>
   <caption>
-    <strong>Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> adversarial attacks</strong>
+    <strong>Table R1-Tab-5: Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> adversarial attacks</strong>
     &nbsp;(APGD-20 and AA-20) on <code>NCT-CRC-HE-100K</code> (left) and <code>NIH-CXR</code> (right) at
     ε ∈ {8/255, 16/255}. Values in parentheses are standard deviations.
   </caption>
@@ -156,7 +123,7 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
 <!-- Empirical robustness table (ℓ∞, APGD-20 & AA-20) -->
 <table>
   <caption>
-    <strong>Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> adversarial attacks</strong>
+    <strong>Table R1-Tab-6: Empirical robustness (accuracy&nbsp;%) against ℓ<sub>∞</sub> adversarial attacks</strong>
     &nbsp;(APGD-20 and AA-20) on <code>EyePACS</code> (left) and <code>HAM10000</code> (right)
     at ε ∈ {8/255, 16/255}. Values in parentheses are standard deviations.
   </caption>
@@ -226,6 +193,48 @@ Table 4: base model vs base model comparison under same fraemworks ( Note: IN = 
     </tr>
   </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Table 4: base model vs base model comparison under same fraemworks ( Note: IN = ImageNet, C10= CIFAR-10)
+| Pipeline  | (\sigma=.25) C10@.50 | C10@.75 | IN@.50 | IN@.75 | (\sigma=.50) C10@.50 | C10@.75 | IN@.50 | IN@.75 |
+| - | -: | -: | -: | -: | -: | -: | -: | -: |
+| Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
+| RPF+RS | 51.6 | 33.9 | 38.5 | 26.7 | 50.3 | 38.8 | 47.4 | 37.5 |
+| CTRW+RS | 52.7 | 36.2 | 42.3 | 30.8 | 52.5 | 40.3 | 50.7 | 40.2 |
+| HySCAN+RS | 57.3 | 45.5 | 56.7 | 47.9 | 56.1 | 45.8 | 55.1 | 46.8 |
+| Vanilla+ARS | 51.4 | 39.1 | 52.7 | 43.1 | 50.2 | 38.9 | 50.3 | 43.4 |
+| RPF+ARS | 53.0 | 40.5 | 53.5 | 43.5 | 51.7 | 42.3 | 48.5 | 39.9 |
+| CTRW+ARS | 54.5 | 42.0 | 54.5 | 44.5 | 53.9 | 44.7 | 52.1 | 42.6 |
+| HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
+
+
+**R3-Tab-1-1: base model vs base model comparison under same frameworks**
+| Pipeline  | (σ=.25) C10@.5 | C10@.75 | IN@.5 | IN@.75 | (σ=.5) C10@.50 | C10@.75 | IN@.5 | IN@.75 |
+| - | -: | -: | -: | -: | -: | -: | -: | -: |
+| Vanilla+RS | 43.4 | 26.1 | 0.0 | 0.0 | 41.3 | 32.4 | 36.8 | 28.7 |
+| RPF+RS | 51.6 | 33.9 | 38.5 | 26.7 | 50.3 | 38.8 | 47.4 | 37.5 |
+| CTRW+RS | 52.7 | 36.2 | 42.3 | 30.8 | 52.5 | 40.3 | 50.7 | 40.2 |
+| HySCAN+RS | 57.3 | 45.5 | 56.7 | 47.9 | 56.1 | 45.8 | 55.1 | 46.8 |
+| Vanilla+ARS | 51.4 | 39.1 | 52.7 | 43.1 | 50.2 | 38.9 | 50.3 | 43.4 |
+| RPF+ARS | 53.0 | 40.5 | 53.5 | 43.5 | 51.7 | 42.3 | 48.5 | 39.9 |
+| CTRW+ARS | 54.5 | 42.0 | 54.5 | 44.5 | 53.9 | 44.7 | 52.1 | 42.6 |
+| HySCAN+ARS | 62.3 | 52.9 | 60.8 | 53.1 | 60.8 | 52.4 | 59.7 | 51.5 |
+
+
+
+
+
 
 
 
