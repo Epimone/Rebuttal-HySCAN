@@ -238,3 +238,12 @@
   <br/>
   <em>Figure R4-Fig-1. Qualitative robustness analysis on NIH-CXR dataset. For a chest X-ray originally labeled No Finding, a PGD adversarial perturbation induces a prediction of Pneumothorax, whereas HySCAN predicts No Finding. A Grad-CAM visualization is shown for qualitative interpretation.</em>
 </p>
+
+
+
+<!-- Figure R1-Fig-2 -->
+<p align="center">
+  <img src="ICML_Diagram_2.jpg" alt="Fig. R1-Fig-2" width="600">
+  <br>
+  <em>Fig.&nbsp;R1-Fig-2.</em> Overview diagram used in the ICML 2026 rebuttal.
+</p>
