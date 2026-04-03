@@ -243,7 +243,7 @@
 
 <!-- Figure R1-Fig-2 -->
 <p align="center">
-  <img src="ICML_Diagram_2.jpg" alt="Fig. R1-Fig-2" width="600">
+  <img src="ICML_Fig_2.jpg" alt="Fig. R1-Fig-2" width="600">
   <br>
   <em>Fig.&nbsp;R1-Fig-2.</em> Overview diagram used in the ICML 2026 rebuttal.
 </p>
