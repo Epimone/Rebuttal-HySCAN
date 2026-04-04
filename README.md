@@ -245,5 +245,5 @@
 <p align="center">
   <img src="ICML_Fig_2.jpg" alt="Fig. R1-Fig-2" width="600">
   <br>
-  <em>Fig.&nbsp;R1-Fig-2.</em> Overview diagram used in the ICML 2026 rebuttal.
+  <em>Fig.&nbsp;R1-Fig-2.</em> Overview of architectural differences between HyCAS and HySCAN.
 </p>
