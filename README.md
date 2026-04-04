@@ -236,7 +236,7 @@
   <img src="https://raw.githubusercontent.com/Epimone/Rebuttal-HySCAN/main/ICML%20Gradcam.jpg"
        alt="Gradcam Image" width="600"/>
   <br/>
-  <em>**Figure R4-Fig-1. Qualitative robustness analysis on NIH-CXR dataset. For a chest X-ray originally labeled No Finding, a PGD adversarial perturbation induces a prediction of Pneumothorax, whereas HySCAN predicts No Finding. A Grad-CAM visualization is shown for qualitative interpretation.**</em>
+  <em><strong> Figure R4-Fig-1. Qualitative robustness analysis on NIH-CXR dataset. For a chest X-ray originally labeled No Finding, a PGD adversarial perturbation induces a prediction of Pneumothorax, whereas HySCAN predicts No Finding. A Grad-CAM visualization is shown for qualitative interpretation.</em>
 </p>
 
 
@@ -245,5 +245,5 @@
 <p align="center">
   <img src="ICML_Fig_2.jpg" alt="Fig. R1-Fig-2" width="600">
   <br>
-  <em>**Fig.&nbsp;R1-Fig-2.</em> Methodological comparison between HyCAS and HySCAN. (a) HyCAS is a Lipschitz-controlled multi-stream architecture composed of FDPAN, SNCAN, and RPFAN, followed by RANI; in this design, weight-space stochasticity arises mainly from RPFAN, while feature-space stochasticity is injected separately by RANI. (b) HySCAN instead introduces a hybrid cross-space-coupled stochastic block inside the backbone, where RWAN applies SANI aware attention-conditioned, input-dependent heteroscedastic perturbations in weight space and SANI injects attention-modulated perturbations in feature space. Crucially, the same attention-noise learner is used in two complementary roles—per-layer RWAN gating and per-block SANI feature injection—so weight-space and feature-space stochasticity are explicitly shared and coordinated rather than added independently. This block-level coupling is the core methodological distinction between HySCAN and HyCAS.**
+  <em><strong> Fig.&nbsp;R1-Fig-2.</em> Methodological comparison between HyCAS and HySCAN. (a) HyCAS is a Lipschitz-controlled multi-stream architecture composed of FDPAN, SNCAN, and RPFAN, followed by RANI; in this design, weight-space stochasticity arises mainly from RPFAN, while feature-space stochasticity is injected separately by RANI. (b) HySCAN instead introduces a hybrid cross-space-coupled stochastic block inside the backbone, where RWAN applies SANI aware attention-conditioned, input-dependent heteroscedastic perturbations in weight space and SANI injects attention-modulated perturbations in feature space. Crucially, the same attention-noise learner is used in two complementary roles—per-layer RWAN gating and per-block SANI feature injection—so weight-space and feature-space stochasticity are explicitly shared and coordinated rather than added independently. This block-level coupling is the core methodological distinction between HySCAN and HyCAS.
 </p>
